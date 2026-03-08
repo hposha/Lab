@@ -1,0 +1,103 @@
+/* Базові налаштування (Темна тема) */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #e0e0e0; /* Світло-сірий текст */
+  background-color: #121212; /* Дуже темний фон сторінки */
+  margin: 0;
+  padding: 20px;
+}
+
+/* Головний контейнер резюме */
+#root {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #1e1e1e; /* Темно-сірий "аркуш" */
+  padding: 40px 50px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Шапка резюме */
+header {
+  text-align: center;
+  border-bottom: 2px solid #4dabf7; /* Яскраво-синій акцент */
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  margin: 0;
+  color: #ffffff;
+  font-size: 2.5em;
+  letter-spacing: 1px;
+}
+
+header p {
+  margin: 8px 0;
+  font-size: 1.1em;
+  color: #a0a0a0;
+}
+
+/* Секції */
+section {
+  margin-bottom: 35px;
+}
+
+section h2 {
+  color: #4dabf7;
+  border-bottom: 1px solid #333333;
+  padding-bottom: 8px;
+  margin-bottom: 15px;
+  font-size: 1.5em;
+}
+
+/* Списки */
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 12px;
+}
+
+li strong {
+  color: #ffffff;
+  font-size: 1.05em;
+}
+
+li p {
+  margin: 5px 0 0 0;
+  color: #b0b0b0;
+}
+
+/* Підвал */
+footer {
+  text-align: center;
+  margin-top: 50px;
+  padding-top: 20px;
+  border-top: 1px solid #333333;
+  font-size: 0.9em;
+  color: #777;
+}
+
+/* --- Стилі для фото та шапки --- */
+.cv-header {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  text-align: left;
+}
+
+.profile-photo {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%; /* Робить фото ідеально круглим */
+  object-fit: cover;  /* Щоб фото не сплющувалося */
+  border: 3px solid #00ff00; /* Колір рамки. Заміни на #e5e7eb, якщо вибрав світлу тему! */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.header-text h1 {
+  margin: 0;
+}
