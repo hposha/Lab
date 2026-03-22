@@ -50,7 +50,8 @@ function Skills() {
       <div className="space-y-8">
         {categories.map(cat => (
           <div key={cat.title}>
-            <h3 className="text-[11px] font-black text-cyan-500 uppercase tracking-widest mb-3 flex items-center gap-2">
+            {/* Трохи приглушив іконки та заголовки категорій, щоб не "кричали" */}
+            <h3 className="text-[11px] font-black text-cyan-600 opacity-90 uppercase tracking-widest mb-3 flex items-center gap-2">
               {cat.icon} {cat.title}
             </h3>
             
@@ -58,10 +59,13 @@ function Skills() {
               {cat.items.map((skill, idx) => (
                 <div 
                   key={idx} 
-                  className="flex justify-between items-center py-2 border-b border-slate-800/60 hover:bg-slate-800/50 hover:px-2 transition-all duration-300 rounded-sm"
+                  // Замінено border та hover:bg на універсальні напівпрозорі варіанти
+                  className="flex justify-between items-center py-2 border-b border-slate-500/20 hover:bg-slate-500/10 hover:px-2 transition-all duration-300 rounded-sm"
                 >
-                  <span className="text-sm text-slate-300 font-medium">{skill.n}</span>
-                  <span className="text-xs font-mono text-emerald-400">{skill.s}</span>
+                  {/* Видалено text-slate-300, додано opacity */}
+                  <span className="text-sm font-medium opacity-90">{skill.n}</span>
+                  {/* Замінено text-emerald-400 на text-emerald-600 для контрасту */}
+                  <span className="text-xs font-mono text-emerald-600 opacity-90">{skill.s}</span>
                 </div>
               ))}
             </div>
